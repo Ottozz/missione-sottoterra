@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Missione Sottoterra</title>
+  <meta name="description" content="Un regalo di laurea che va molto, molto in profondità.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== INTRO AL BUIO ========== -->
+  <div id="buio" class="buio" aria-hidden="false">
+    <div class="buio__testo">
+      <p class="mono">Livello luce: 0%</p>
+      <h1>Fa buio, eh?</h1>
+      <p>Abituati.<br>Muovi il dito per usare la frontale.</p>
+      <p class="piccolo">Se riesci a leggere questo, la frontale funziona.<br>Se non riesci, beh, niente regalo...bella scesa!</p>
+    </div>
+    <button id="accendi" class="btn btn--ghost buio__btn">🔦 Ok, accendi tutto</button>
+  </div>
+
+  <main>
+
+    <!-- ========== HERO ========== -->
+    <header class="hero">
+      <p class="mono hero__kicker">Comunicazione ufficiale · Prot. n. 110/L</p>
+      <h1 class="hero__titolo">
+        Congratulazioni,<br>
+        <span class="accento" data-campo="titoloAmico">Dottore</span>.
+      </h1>
+      <p class="hero__sub">
+        Hai passato anni chiuso in una stanza buia, a lume di lampada, senza vedere la luce del sole.
+        <strong>Ottimo allenamento.</strong> Perché adesso si fa sul serio.
+      </p>
+      <a href="#regalo" class="btn">Scopri dove ti porto ↓</a>
+    </header>
+
+    <!-- ========== IL REGALO ========== -->
+    <section id="regalo" class="sezione">
+      <p class="mono etichetta">01 — Il regalo</p>
+      <h2>Ti porto sottoterra.<br><span class="sottovoce">(Lo so. Ma non in quel senso.)</span></h2>
+      <p>
+        Dopo tutto quel tempo passato sopra i libri, è giusto andare un po' sotto.
+        Ti ho preso una <strong>Cave Experience</strong>: speleo-canyoning nella <em>Grotta Segreta</em>,
+        vicino Subiaco. Caschetto, imbrago, luce frontale, teleferiche in corda e sale enormi di roccia.
+        Io e te. A seguire volendo un bel pranzetto ciotto, ma quello te lo paghi da solo.
+      </p>
+
+      <div class="biglietto">
+        <div class="biglietto__main">
+          <p class="mono biglietto__tipo">Biglietto · Ingresso al centro della Terra</p>
+          <h3>CAVE EXPERIENCE</h3>
+          <p class="biglietto__desc">Speleo-canyoning nella Grotta Segreta</p>
+          <dl class="biglietto__dati">
+            <div><dt>Dove</dt><dd>Subiaco (RM)</dd></div>
+            <div><dt>Durata</dt><dd>~3 ore</dd></div>
+            <div><dt>Difficoltà</dt><dd>Facile/Media*</dd></div>
+            <div><dt>Passeggeri</dt><dd><span data-campo="nomeAmico">Il Dottore</span> + <span data-campo="tuoNome">io</span></dd></div>
+          </dl>
+          <p class="piccolo">* Facile/Media per persone normali. Per uno che è appena sopravvissuto alla sessione, praticamente una passeggiata.</p>
+        </div>
+        <div class="biglietto__stub">
+          <p class="mono">VALIDO</p>
+          <p class="biglietto__voto">110</p>
+          <p class="mono">e lode<br>in coraggio</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FAQ ========== -->
+    <section class="sezione">
+      <p class="mono etichetta">02 — Domande frequenti (che sicuramente ti stai facendo)</p>
+      <div class="faq">
+        <details>
+          <summary>Devo portare la tesi?</summary>
+          <p>No. Il caschetto sì. La tesi ha già fatto abbastanza danni.</p>
+        </details>
+        <details>
+          <summary>Lì sotto c'è campo?</summary>
+          <p>No. Che tradotto vuol dire: per 3 ore nessuno ti chiederà <em>«E adesso che lavoro fai?»</em>. Considerala la parte più bella del regalo.</p>
+        </details>
+        <details>
+          <summary>È pericoloso?</summary>
+          <p>Ci sono guide esperte, imbrago e caschetto. L'unico vero rischio è che qualche bella ragazza ci distragga dal senso dell'avventura. Ma facciamo cagare, quindi le possibilità sono basse.</p>
+        </details>
+        <details>
+          <summary>E se c'è una strettoia?</summary>
+          <p>Ti sei infilato in un piano di studi, in una tesi col prof infame e in una segreteria universitaria. Una strettoia ti fa un baffo.</p>
+        </details>
+        <details>
+          <summary>Perché proprio una grotta?</summary>
+          <p>Perché un buono Amazon era troppo triste, una cena troppo banale, e volevo vederti con una lucina in testa. Tre ottime ragioni.</p>
+        </details>
+        <details>
+          <summary>Chi paga?</summary>
+          <p>Io. Goditi questo momento: non ricapiterà.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- ========== CHECKLIST ========== -->
+    <section class="sezione">
+      <p class="mono etichetta">03 — Cosa portare</p>
+      <h2>Checklist pre-spedizione</h2>
+      <p class="sottovoce">Spunta tutto. Sì, anche quelle stupide.</p>
+      <ul class="checklist" id="checklist">
+        <li><label><input type="checkbox"> Pantaloni lunghi e felpa <span class="nota">(che non ti dispiace sporcare)</span></label></li>
+        <li><label><input type="checkbox"> Scarpe da trekking chiuse <span class="nota">(no sandali, non siamo in Erasmus)</span></label></li>
+        <li><label><input type="checkbox"> Mezzo litro d'acqua e uno snack <span class="nota">(lo snack lo dividi, è il pedaggio)</span></label></li>
+        <li><label><input type="checkbox"> Il diploma di laurea <span class="nota">(scherzo. Lascialo a casa. Per favore.)</span></label></li>
+        <li><label><input type="checkbox"> Un minimo di coraggio <span class="nota">(sicuro mi cago sotto più io di te, sono mezzo claustrofobico)</span></label></li>
+        <li><label><input type="checkbox"> Me <span class="nota">(obbligatorio, non negoziabile)</span></label></li>
+      </ul>
+      <p class="checklist__esito" id="checklistEsito" hidden>✅ Equipaggiamento completo. Sei ufficialmente pronto a sparire dalla mappa.</p>
+    </section>
+
+    <!-- ========== MOMENTO SERIO ========== -->
+    <section class="sezione serio">
+      <p class="mono etichetta">04 — Contenuto sensibile</p>
+      <h2>⚠️ Attenzione</h2>
+      <p>La sezione seguente contiene un momento serio. Potrebbe causare imbarazzo, occhi lucidi o tosse improvvisa per nascondere l'emozione.</p>
+      <button id="btnSerio" class="btn">Ok, ce la faccio. Mostramelo.</button>
+
+      <div id="serio" class="serio__box" hidden>
+        <div class="serio__timer mono">Autodistruzione tra <span id="timer">15</span>s</div>
+        <p>
+          Senza fare troppo lo sdolcinato: <strong>sono fiero di te</strong>.
+          Ti ho visto sbattere la testa, mollare, ripartire, lamentarti (tanto), e arrivare fino in fondo lo stesso.
+          Non era scontato e l'hai fatto. Te lo meriti tutto.
+        </p>
+        <p>E ti voglio bene, fratè. Ecco, l'ho detto.</p>
+        <p class="firma">— <span data-campo="tuoNome">il tuo Brother</span></p>
+      </div>
+
+      <div id="serioFine" class="serio__fine" hidden>
+        <p class="mono">💥 MOMENTO SERIO AUTODISTRUTTO</p>
+        <p>Nessuno ha visto niente. Non è mai successo. Torniamo a essere uomini di roccia. 🪨</p>
+        <button id="btnRiguarda" class="btn btn--ghost">Ok ma fammelo rileggere (nessuno lo saprà)</button>
+      </div>
+    </section>
+
+    <!-- ========== ACCETTA ========== -->
+    <section class="sezione finale">
+      <p class="mono etichetta">05 — Firma qui</p>
+      <h2>Accetti la missione?</h2>
+      <p>Il turno lo scegliamo insieme (mattina alle 9:30 o pomeriggio alle 14:30). Tu metti il coraggio, io il resto.</p>
+      <div class="scelta" id="scelta">
+        <button id="si" class="btn btn--grande">Sì, ci sto 🧗</button>
+        <button id="no" class="btn btn--ghost btn--no">No, ho paura del buio</button>
+      </div>
+      <div id="accettato" class="accettato" hidden>
+        <h3>Missione accettata. 🪖</h3>
+        <p>Contratto firmato, non si torna indietro. Da ora sei ufficialmente un <strong>Dottore in Speleologia Applicata (honoris causa)</strong>.</p>
+        <p class="sottovoce">Te dico NAAAAAAAAMOOO. Ora vai a goderti la festa. Te la sei guadagnata. Ci vediamo sottoterra. 🔦</p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p class="mono">Nessun dottore è stato maltrattato nella realizzazione di questo sito.</p>
+    </footer>
+  </main>
+
+  <canvas id="coriandoli" aria-hidden="true"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
