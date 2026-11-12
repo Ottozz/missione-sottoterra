@@ -2,10 +2,10 @@
    PERSONALIZZA QUI 👇
    ========================================================= */
 const CONFIG = {
-  nomeAmico: "Il Dottore",     // es. "Marco"
-  titoloAmico: "Dottore",      // es. "Dott. Marco" o "Ingegnere"
-  tuoNome: "io",               // es. "Andrea"
-  secondiMomentoSerio: 15,     // quanto dura il messaggio serio prima di "autodistruggersi"
+  nomeAmico: "Cristiano",    // es. "Marco"
+  titoloAmico: "Dott. Cristiano",    // es. "Dott. Marco" o "Ingegnere"
+  tuoNome: "il tuo Brother",    // es. "Andrea"
+  secondiMomentoSerio: 10,    // quanto dura il messaggio serio prima di "autodistruggersi"
 };
 
 /* ---------- Inserisce i nomi ---------- */
