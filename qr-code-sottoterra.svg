@@ -46,5 +46,5 @@
   <line x1="70" y1="1100" x2="930" y2="1100" stroke="#8a6a3c" stroke-width="3" stroke-dasharray="14 10" opacity="0.7"/>
   <text x="500" y="1180" text-anchor="middle" font-family="Arial Black, Segoe UI Black, Arial, sans-serif" font-size="44" font-weight="900" fill="#2a2117">Un regalo che va molto,</text>
   <text x="500" y="1240" text-anchor="middle" font-family="Arial Black, Segoe UI Black, Arial, sans-serif" font-size="44" font-weight="900" fill="#b8650f">molto in profondità.</text>
-  <text x="500" y="1310" text-anchor="middle" font-family="Consolas, Courier New, monospace" font-size="28" fill="#8a6a3c">Insomma, come piace a noi: <tspan fill="#b8650f" font-weight="bold" text-decoration="underline">bello deep</tspan></text>
+  <text x="500" y="1310" text-anchor="middle" font-family="Consolas, Courier New, monospace" font-size="28" fill="#8a6a3c">Insomma, come piace a noi: <tspan fill="#b8650f">BELLO DEEP</tspan></text>
 </svg>
